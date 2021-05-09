@@ -1,2 +1,2 @@
 filename: output.txt
-output_folder: results
+output_folder: s3://prism-general/towertest_results
