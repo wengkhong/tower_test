@@ -1,9 +1,0 @@
-2021-05-09 13:01:33	2.7s	maniac_wilson	OK	236ba08f53a90d8192b0a5ededa728ff	40160018-290d-4ad7-aa6a-7ed6cf1e2e0e	nextflow run tower_test.nf
-2021-05-09 13:01:44	2.9s	ecstatic_elion	OK	236ba08f53a90d8192b0a5ededa728ff	8987ef38-9b88-477e-8e0f-e63145c81574	nextflow run tower_test.nf -params-file params.yaml
-2021-05-09 13:05:17	3.2s	infallible_swanson	OK	09922569136e8bbbecadacc8c881b400	17de3340-1c65-4766-a8b1-783fa3b8399d	nextflow run tower_test.nf -params-file params.yaml
-2021-05-09 13:07:04	2.2s	condescending_koch	ERR	76745614f1d84631a31d138850d950f9	78d658bc-2cff-4d62-aab5-e441ebf4ae7e	nextflow run tower_test.nf -params-file params.yaml
-2021-05-09 13:07:24	3.2s	high_lorenz	OK	3ae36c0fca083a2b41f4d67a15888367	c1f42056-02e9-4369-a557-547ccdd866e2	nextflow run tower_test.nf -params-file params.yaml
-2021-05-09 13:31:38	2.4s	cranky_morse	OK	3ae36c0fca083a2b41f4d67a15888367	f762b10e-3e34-4605-9336-e3e6258ee827	nextflow run main.nf -params-file params.yaml
-2021-05-09 13:32:14	1.9s	angry_einstein	OK	3ae36c0fca083a2b41f4d67a15888367	7a44b436-8332-467f-9768-9c720a689e94	nextflow run main.nf -params-file params.yaml -c nextflow.config
-2021-05-09 13:35:57	1.8s	goofy_euler	OK	3ae36c0fca083a2b41f4d67a15888367	39b39b38-4a34-474b-8077-5321c843ac09	nextflow run main.nf -params-file params.yaml -c nextflow.config
-2021-05-09 13:36:25	28m 56s	reverent_minsky	ERR	3ae36c0fca083a2b41f4d67a15888367	7ddd948e-c24d-47a3-ae76-d9e169111621	nextflow run main.nf -params-file params.yaml -c nextflow.config -profile docker
