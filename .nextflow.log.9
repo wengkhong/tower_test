@@ -1,0 +1,44 @@
+May-09 13:01:44.583 [main] DEBUG nextflow.cli.Launcher - $> nextflow run tower_test.nf -params-file params.yaml
+May-09 13:01:44.718 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.10.0
+May-09 13:01:44.735 [main] INFO  nextflow.cli.CmdRun - Launching `tower_test.nf` [ecstatic_elion] - revision: 236ba08f53
+May-09 13:01:44.933 [main] DEBUG nextflow.Session - Session uuid: 8987ef38-9b88-477e-8e0f-e63145c81574
+May-09 13:01:44.933 [main] DEBUG nextflow.Session - Run name: ecstatic_elion
+May-09 13:01:44.935 [main] DEBUG nextflow.Session - Executor pool size: 40
+May-09 13:01:44.954 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.10.0 build 5430
+  Created: 01-11-2020 15:14 UTC (23:14 SGST)
+  System: Linux 3.10.0-862.14.4.el7.x86_64
+  Runtime: Groovy 3.0.5 on OpenJDK 64-Bit Server VM 1.8.0_242-b08
+  Encoding: UTF-8 (UTF-8)
+  Process: 120263@head-node.prism.local [10.10.250.100]
+  CPUs: 40 - Mem: 125.6 GB (742.5 MB) - Swap: 50.8 GB (43.6 GB)
+May-09 13:01:44.996 [main] DEBUG nextflow.Session - Work-dir: /prism_data3/share/gmslwkg/tower_test/work [nfs]
+May-09 13:01:44.996 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /prism_data3/share/gmslwkg/tower_test/bin
+May-09 13:01:45.098 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+May-09 13:01:45.100 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+May-09 13:01:45.404 [main] DEBUG nextflow.Session - Session start invoked
+May-09 13:01:46.183 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-09 13:01:46.195 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: sayHello
+May-09 13:01:46.295 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-09 13:01:46.295 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-09 13:01:46.301 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+May-09 13:01:46.307 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=40; memory=125.6 GB; capacity=40; pollInterval=100ms; dumpInterval=5m
+May-09 13:01:46.443 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+May-09 13:01:46.443 [main] DEBUG nextflow.Session - Session await
+May-09 13:01:46.675 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-09 13:01:46.681 [Task submitter] INFO  nextflow.Session - [77/d59ea4] Submitted process > sayHello (2)
+May-09 13:01:46.691 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-09 13:01:46.691 [Task submitter] INFO  nextflow.Session - [c8/f809b8] Submitted process > sayHello (1)
+May-09 13:01:46.701 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-09 13:01:46.702 [Task submitter] INFO  nextflow.Session - [da/c414a7] Submitted process > sayHello (3)
+May-09 13:01:46.708 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-09 13:01:46.709 [Task submitter] INFO  nextflow.Session - [e7/5f7cb5] Submitted process > sayHello (4)
+May-09 13:01:46.720 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: sayHello (2); status: COMPLETED; exit: 0; error: -; workDir: /prism_data3/share/gmslwkg/tower_test/work/77/d59ea4333cfeeb2ce3a84e821850aa]
+May-09 13:01:46.737 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: sayHello (1); status: COMPLETED; exit: 0; error: -; workDir: /prism_data3/share/gmslwkg/tower_test/work/c8/f809b8e507df25634690bf8774626b]
+May-09 13:01:46.741 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: sayHello (3); status: COMPLETED; exit: 0; error: -; workDir: /prism_data3/share/gmslwkg/tower_test/work/da/c414a7cba4a98ddb1a258bf547aab0]
+May-09 13:01:46.744 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: sayHello (4); status: COMPLETED; exit: 0; error: -; workDir: /prism_data3/share/gmslwkg/tower_test/work/e7/5f7cb52d8a2e8046d72e062afaa5d2]
+May-09 13:01:46.748 [main] DEBUG nextflow.Session - Session await > all process finished
+May-09 13:01:46.810 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-09 13:01:46.825 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=4; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=8ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+May-09 13:01:46.868 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+May-09 13:01:46.885 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

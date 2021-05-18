@@ -1,0 +1,51 @@
+May-09 13:32:13.048 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -params-file params.yaml -c nextflow.config
+May-09 13:32:13.205 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.10.0
+May-09 13:32:13.223 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [angry_einstein] - revision: 3ae36c0fca
+May-09 13:32:13.264 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /prism_data3/share/gmslwkg/tower_test/nextflow.config
+May-09 13:32:13.268 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /prism_data3/share/gmslwkg/tower_test/nextflow.config
+May-09 13:32:13.268 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /prism_data3/share/gmslwkg/tower_test/nextflow.config
+May-09 13:32:13.269 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /prism_data3/share/gmslwkg/tower_test/nextflow.config
+May-09 13:32:13.300 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+May-09 13:32:14.173 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+May-09 13:32:14.317 [main] DEBUG nextflow.Session - Session uuid: 7a44b436-8332-467f-9768-9c720a689e94
+May-09 13:32:14.317 [main] DEBUG nextflow.Session - Run name: angry_einstein
+May-09 13:32:14.318 [main] DEBUG nextflow.Session - Executor pool size: 40
+May-09 13:32:14.334 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.10.0 build 5430
+  Created: 01-11-2020 15:14 UTC (23:14 SGST)
+  System: Linux 3.10.0-862.14.4.el7.x86_64
+  Runtime: Groovy 3.0.5 on OpenJDK 64-Bit Server VM 1.8.0_242-b08
+  Encoding: UTF-8 (UTF-8)
+  Process: 133423@head-node.prism.local [10.10.250.100]
+  CPUs: 40 - Mem: 125.6 GB (612.2 MB) - Swap: 50.8 GB (43.6 GB)
+May-09 13:32:14.359 [main] DEBUG nextflow.Session - Work-dir: /prism_data3/share/gmslwkg/tower_test/work [nfs]
+May-09 13:32:14.359 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /prism_data3/share/gmslwkg/tower_test/bin
+May-09 13:32:14.419 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+May-09 13:32:14.421 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+May-09 13:32:14.632 [main] DEBUG nextflow.Session - Session start invoked
+May-09 13:32:15.038 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-09 13:32:15.048 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: sayHello
+May-09 13:32:15.165 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-09 13:32:15.166 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-09 13:32:15.171 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+May-09 13:32:15.178 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=40; memory=125.6 GB; capacity=40; pollInterval=100ms; dumpInterval=5m
+May-09 13:32:15.274 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+May-09 13:32:15.274 [main] DEBUG nextflow.Session - Session await
+May-09 13:32:15.459 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-09 13:32:15.464 [Task submitter] INFO  nextflow.Session - [5c/f16ad6] Submitted process > sayHello (1)
+May-09 13:32:15.480 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-09 13:32:15.481 [Task submitter] INFO  nextflow.Session - [f6/58bb0e] Submitted process > sayHello (3)
+May-09 13:32:15.488 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-09 13:32:15.489 [Task submitter] INFO  nextflow.Session - [48/b9413d] Submitted process > sayHello (2)
+May-09 13:32:15.495 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-09 13:32:15.496 [Task submitter] INFO  nextflow.Session - [10/c06aab] Submitted process > sayHello (4)
+May-09 13:32:15.508 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: sayHello (1); status: COMPLETED; exit: 0; error: -; workDir: /prism_data3/share/gmslwkg/tower_test/work/5c/f16ad6c7be41544095f6b172c7a4df]
+May-09 13:32:15.544 [Task monitor] DEBUG n.util.BlockingThreadExecutorFactory - Thread pool name=FileTransfer; maxThreads=120; maxQueueSize=360; keepAlive=1m
+May-09 13:32:15.555 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: sayHello (3); status: COMPLETED; exit: 0; error: -; workDir: /prism_data3/share/gmslwkg/tower_test/work/f6/58bb0e0724e8dce8c2f24adc6ea2c2]
+May-09 13:32:15.562 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: sayHello (2); status: COMPLETED; exit: 0; error: -; workDir: /prism_data3/share/gmslwkg/tower_test/work/48/b9413d02ffaa84c0491f585d7e587e]
+May-09 13:32:15.665 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: sayHello (4); status: COMPLETED; exit: 0; error: -; workDir: /prism_data3/share/gmslwkg/tower_test/work/10/c06aabaed30ebc6dd7a0a7fc537aa2]
+May-09 13:32:15.675 [main] DEBUG nextflow.Session - Session await > all process finished
+May-09 13:32:15.762 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-09 13:32:15.776 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=4; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=11ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+May-09 13:32:15.892 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+May-09 13:32:15.912 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
